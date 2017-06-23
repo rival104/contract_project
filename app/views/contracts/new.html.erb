@@ -6,12 +6,38 @@
 	<div class='col-xs-12'>
 		<%= form_for(@contract, :html => {class: "form-horizontal", role: "form"}) do |f| %>
 				<div class="form-group">
+					<div class="contract-page well">
+					<article>
+						<p>March 1, 2007</p>
+						<p>Mr. Steve Smithee<br /> President<br /> Smithee &amp; Company<br /> 1010 Main Street<br /> Kansas City, Missouri 64105</p>
+						<p>Dear Mr. Smithee:</p>
+						<p>The purpose of this letter of agreement is to outline the scope of the writing services that <span class="name">[YOUR NAME]</span> will perform for Smithee &amp; Company.</p>
+						<p>Services to Be Rendered</p>
+						<p><span class="name">[YOUR NAME]</span> agrees to write a four-page brochure describing the engineering services of Smithee &amp; Company. Information for the brochure will be provided, on a timely basis, through existing corporate materials as well as through interviews with Steve Smithee and other appropriate Smithee &amp; Company staff.</p>
+						<p>Smithee &amp; Company 1) will provide all photos, charts and other graphics to be included in the brochure, and 2) is responsible for printing and other production costs related to the brochure.</p>
+						<p>Fee</p>
+						<p>Services will be performed at the rate of $60 per hour. I estimate that this project will take between 25 and 40 hours and cost between $1,500 and $2,400. If fewer than 25 hours are required, Smithee &amp; Company will be charged only for the actual hours <span class="name">[YOUR NAME]</span> works on the project.</p>
+						<p>Additional Costs</p>
+						<p>The estimated fee outlined above includes a first draft and one edit of the four-page brochure. Hours for additional edits and/or a longer brochure will be billed at the rate of $60 an hour.</p>
+						<p>All hours in excess of the estimated project maximum (40 hours) listed in the Fee section must be approved in writing by Smithee &amp; Company.</p>
+						<p>Timeline</p>
+						<p><span class="name">[YOUR NAME]</span> will deliver a first draft of the brochure to Smithee &amp; Company by Wednesday, March 26. The final edited version (including hard copy and a computer disk in Word) will be delivered by Monday, April 2, as long as Smithee &amp; Company staff members are available on a timely basis to discuss changes to the original.</p>
+						<p>Terms of Payment</p>
+						<p>$750 will be paid to <span class="name">[YOUR NAME]</span> within five days after the signing of this letter of agreement. Smithee &amp; Company will be billed for the balance at the end of the project (tentatively April 2) and payment in full will be due within 15 days.</p>
+						<p>Sincerely,</p>
+						<p>Freelancer Name<br /> Freelancer Address<br /> City, State &amp; Zip Code<br /> Phone Number</p>
+						<p id="date">(DATE AUTO)</p>
+						<p>_____________________ <br/> Date</p>
+						<h3 class="name signature"></h3>
+						<p>_____________________</p> <p class="name">[YOUR NAME]</p><p>TechClub Inc.</p>
+					</article>
+				</div>
 					<div class="control-label col-sm-2">
 						Client Name
 					</div>
 					<div class="col-sm-8">
-						<%= f.text_field :cname, class: "form-control", placeholder: "Title of article", autofocus: true %>
-							<p for="checkbox">By clicking CREATE you are agreeing to the <a href="#">term & conditions</a> </p>
+						<%= f.text_field :cname, class: "form-control", placeholder: "Sign with your name", autofocus: true %>
+							<p class="white" for="checkbox">By clicking CREATE you are agreeing to the <a href="#">term & conditions</a> </p>
 					</div>
 				</div>
 			

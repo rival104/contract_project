@@ -1,21 +1,27 @@
 <h1 align="center">Showing all contracts</h1>
-
+<% @count = 70 %>
 <% @contract.each do |contract| %>
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2">
-				<div class="well well-lg">
-					<div class="article-title">
-						<%= link_to contract.cname, contract_path(contract) %>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="well well-lg">
+				<div class="row">
+					<div class="col-xs-4">
+						<img class="thumbnail img-responsive" src="https://randomuser.me/api/portraits/men/<%= @count += 1 %>.jpg">
 					</div>
-					<div class="article-body">
-					  
-					</div>
-					<div class="article-actions">
-					  	<%= link_to "Delete this contract", contract_path(contract), method: :delete,
-						data: { confirm: "Are you sure you want to delete the Contract?"},
-						class: "btn btn-xs btn-danger" %>
+					<div class="col-xs-8">
+						<div class="article-title">
+							<%= link_to contract.cname, contract_path(contract) %>
+						</div>
+						<div class="article-body">
+						</div>
+						<div class="article-actions">
+							<%= link_to "Delete this contract", contract_path(contract), method: :delete,
+							data: { confirm: "Are you sure you want to delete the Contract?"},
+							class: "btn btn-xs btn-danger" %>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 <% end %>

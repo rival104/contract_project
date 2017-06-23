@@ -1,7 +1,16 @@
-// $navbar-inverse-bg: black;
+$navbar-inverse-bg: #092652;
   
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+#body{
+	background: asset-url("bg-black") fixed;
+	min-height: 1200px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
 
 #logo {
 	float: left;
@@ -18,17 +27,30 @@
 .center {
 	text-align: center;
 }
-.jumbotron {
-	background-image: url('http://www.coolfbcovers.com/covers-images/download/Feel%20The%20Bass%20Fb%20Cover.jpg');
+.contract{
+	background-image: asset-url('contract-home.jpg');
 	background-size: cover;
 	height: 550px;
 }
+.blog{
+	background-image: asset-url('blog-home.jpg');
+	background-size: cover;
+	height: 550px;
+}
+// .jumbotron {
+// 	background-image: url('http://www.coolfbcovers.com/covers-images/download/Feel%20The%20Bass%20Fb%20Cover.jpg');
+// 	background-size: cover;
+// 	height: 550px;
+// }
 .jumbotron h1 {
 	color: #fff;
 	text-align: center;
 	margin-bottom: 30px;
 	letter-spacing: -1px;
 	font-weight: bold;
+}
+#contract{
+	color: #092652;
 }
 .btn-xlarge {
 	font-size: 1.7em;
@@ -82,6 +104,7 @@ footer ul li {
 // contract page
 .contract-page{
 	margin-top: 70px;
+	color:black;
 }
 .signature{
 	margin-bottom: -20px;
@@ -94,4 +117,7 @@ footer ul li {
 }
 .name{
 	font-weight: 700;
+}
+h1, h2, label, .control-label, .white{
+	color:#fff;
 }

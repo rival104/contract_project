@@ -1,9 +1,19 @@
 
-<div class="center jumbotron">
-	
-	<h1>Welcome to my page!</h1>
 
-	<%= link_to "Get Started", '#',class: "btn btn-primary btn-lg btn-xlarge" %>
+<div class="center jumbotron contract" >
+	
+	<h1 id="contract">Get rid of the clutter!</h1>
+	<h3>Secure online contract system.</h3>
+
+	<%= link_to "Get Started", new_contract_path ,class: "btn btn-primary btn-lg btn-xlarge" %>
+
+</div>
+
+<div class="center jumbotron blog">
+	
+	<h1>See some cool posts!</h1>
+
+	<%= link_to "Click to see!", articles_path,class: "btn btn-primary btn-lg btn-xlarge" %>
 
 </div>
 
