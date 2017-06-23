@@ -1,0 +1,29 @@
+<h1 align = "center">New Contract page</h1>
+
+<%= render 'shared/errors', obj: @contract %>
+
+<div class='row'>
+	<div class='col-xs-12'>
+		<%= form_for(@contract, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+				<div class="form-group">
+					<div class="control-label col-sm-2">
+						Client Name
+					</div>
+					<div class="col-sm-8">
+						<%= f.text_field :cname, class: "form-control", placeholder: "Title of article", autofocus: true %>
+							<p for="checkbox">By clicking CREATE you are agreeing to the <a href="#">term & conditions</a> </p>
+					</div>
+				</div>
+			
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<%= f.submit class: 'btn btn-primary btn-lg' %>
+					</div>
+				</div>
+		<% end %>
+		<div class="col-xs-4 col-xs-offset-4">
+		
+			[ <%= link_to "Cancel request and return to contracts listing", contracts_path %> ]
+		</div>
+	</div>
+</div>
